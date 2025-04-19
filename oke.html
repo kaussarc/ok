@@ -1,0 +1,148 @@
+<!DOCTYPE html><html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Қымбатты Жаннұрға</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sacramento&display=swap');body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Great Vibes', cursive;
+  background: linear-gradient(to right, #ffd1dc, #ffe0f0);
+  color: #6a004c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.card {
+  background: white;
+  border-radius: 30px;
+  padding: 50px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  text-align: center;
+  animation: slideUp 2s ease-out;
+  border: 2px solid #ff99c8;
+  z-index: 1;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+  color: #ff1493;
+}
+
+p {
+  font-size: 26px;
+  line-height: 1.8;
+  font-family: 'Sacramento', cursive;
+  color: #99004d;
+}
+
+strong {
+  color: #ff66a3;
+}
+
+/* Анимация жүрекшелер */
+.hearts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: pink;
+  transform: rotate(45deg);
+  animation: floatUp 10s infinite ease-in;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: pink;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  left: -10px;
+  top: 0;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+.image-placeholder {
+  margin-top: 30px;
+  font-size: 18px;
+  color: #bb3385;
+}
+
+  </style>
+</head>
+<body>
+  <div class="hearts">
+    <div class="heart" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="heart" style="left: 30%; animation-delay: 2s;"></div>
+    <div class="heart" style="left: 50%; animation-delay: 4s;"></div>
+    <div class="heart" style="left: 70%; animation-delay: 6s;"></div>
+    <div class="heart" style="left: 90%; animation-delay: 8s;"></div>
+  </div>  <div class="card">
+    <h1>Қымбатты Жаннұр!</h1>
+    <p>
+      18 жасың құтты болсын! Сен мен үшін әрдайым жүрегіме жақын, мейірімді, ерекше жансың.<br><br>
+      Мен сені шын жүректен қатты жақсы көремін!<br><br>
+      Саған мықты денсаулық, шексіз бақыт, сарқылмас табыстар тілеймін.<br>
+      Армандарың орындалып, алдыңнан тек жақсылықтар кездесіп отырсын.<br>
+      Өміріңнің әр күні шаттық пен қуанышқа толы болсын.<br>
+      Өмір жолың әрдайым өзің сияқты нұрлы болсын.<br><br>
+      Шын жүрекпен, <strong>Кәусар</strong>.
+    </p><div class="image-placeholder">
+  <!-- Мұнда сурет қоюға болады -->
+  <p><em>WhatsApp Image 2025-04-20 at 00.57.14_34b3c47c.jpg</em></p>
+</div>
+
+  </div>  <audio autoplay loop>
+    <!-- Мұнда музыка сілтемесін өзгертуге болады -->
+    <source src="NECHAEV - 18 (1).mp3">
+    
+  </audio>
+</body>
+</html>
